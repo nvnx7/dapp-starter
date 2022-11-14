@@ -5,6 +5,13 @@
       "dependsOn": ["^build"],
       "outputs": ["dist/**", ".next/**"]
     },
+    "web#build": {
+      "env": [
+        "NODE_ENV",
+        "NEXT_PUBLIC_RPC_URL_GOERLI",
+        "NEXT_PUBLIC_RPC_POLYGON_MUMBAI"
+      ]
+    },
     "lint": {
       "outputs": []
     },

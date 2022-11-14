@@ -1,5 +1,18 @@
 {
   "extends": "tsconfig/nextjs.json",
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "components/*": ["components/*"],
+      "theme/*": ["theme/*"],
+      "contexts/*": ["contexts/*"],
+      "hooks/*": ["hooks/*"],
+      "utils/*": ["utils/*"],
+      "contracts/*": ["contracts/*"],
+      "config/*": ["config/*"],
+      "services/*": ["services/*"]
+    }
+  }
 }

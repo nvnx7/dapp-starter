@@ -1,10 +1,10 @@
-import { Button } from "ui";
+import { Heading } from '@chakra-ui/react';
+import { Layout } from 'components/common/layout';
 
-export default function Web() {
+export default function Home() {
   return (
-    <div>
-      <h1>Web</h1>
-      <Button />
-    </div>
+    <Layout>
+      <Heading>WAGMI</Heading>
+    </Layout>
   );
 }
